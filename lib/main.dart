@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:my_aboutme/blog.dart';
 import 'package:my_aboutme/homePage.dart';
 import 'package:my_aboutme/login.dart';
+import 'package:my_aboutme/product_form_create.dart';
+import 'package:my_aboutme/product_list.dart';
 import 'package:my_aboutme/profile.dart';
 import 'package:my_aboutme/videoPresentation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -25,6 +27,8 @@ class MyApp extends StatelessWidget {
         'video_presentation': (BuildContext context) =>
             const VideoPresentation(),
         'blog': (BuildContext context) => const Blog(),
+        'product': (BuildContext context) => const ProductList(),
+        'productCreate': (BuildContext context) => const ProductFormCreate(),
       },
     );
   }

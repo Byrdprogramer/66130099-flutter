@@ -199,6 +199,35 @@ class _HomePageState extends State<HomePage> {
                             )
                           ],
                         )),
+                  ),
+                                 Container(
+                    padding: const EdgeInsets.all(0.0),
+                    color: const Color.fromRGBO(114, 165, 246, 1),
+                    child: TextButton(
+                        onPressed: () {
+                         Navigator.pushNamed(context, "product");
+                        },
+                        child: const Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image(
+                              image: AssetImage("assets/images/vb.png"),
+                              height: 80.0,
+                              width: 80.0,
+                            ),
+                            Center(
+                              child: Text(
+                                "Product List",
+                                style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white
+                                    ),
+                                    textAlign: TextAlign.center,
+                              ),
+                            )
+                          ],
+                        )),
                   )
                 ],
               ),
